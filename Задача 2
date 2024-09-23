@@ -1,0 +1,18 @@
+// Найти максимальную и минимальную переменные, используя модуль
+
+using System;
+
+public class MinMax
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("a=");
+        int a = Convert.ToInt32(Console.ReadLine());
+        Console.Write("b=");
+        int b = Convert.ToInt32(Console.ReadLine());
+        int min = (a-Math.Abs(a-b)+b)/2;
+        int max = (a+Math.Abs(a-b)+b)/2;
+        Console.WriteLine($"max={max}, min={min}");
+        
+    }
+}
