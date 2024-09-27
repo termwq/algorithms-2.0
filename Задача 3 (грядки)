@@ -22,19 +22,44 @@ public class Garden
         sn3 = sn2 + (2*k + 4*len + 2*(len + wid));
         Console.WriteLine($"sn1={sn1}, sn2={sn2}, sn3={sn3}");
         
-        //sn2 = 2*k + 2*(len + wid) + 2*k + 2*len + 2*(len + wid) ==
+        //sn2 = sn1 + (2*k + 2*len + 2*(len + wid)) ==
+        //== 2*k + 2*(len + wid) + 2*k + 2*len + 2*(len + wid)
         //== 4*k + 4*(len + wid) + 2*len
         
-        //sn3 = 4*k + 4*(len + wid) + 2*len + 2*k + 4*len + 2*(len + wid) ==
+        //sn3 = sn2 + (2*k + 4*len + 2*(len + wid)) ==
+        //== 4*k + 4*(len + wid) + 2*len + 2*k + 4*len + 2*(len + wid) ==
         //== 6*k + 6*(len + wid) + 6*len
         
         //sn4 = sn3 + (2*k + 6*len + 2*(len + wid)) ==
-        //== 6*k + 6*(len + wid) + 2*len + 2*k + 6*len + 2*(len + wid) ==
-        //== 8*k + 8*(len + wid) + 8*len
+        //== 6*k + 6*(len + wid) + 6*len + 2*k + 6*len + 2*(len + wid) ==
+        //== 8*k + 8*(len + wid) + 12*len
         
         //sn5 = sn4 + (2*k + 8*len + 2*(len + wid)) ==
-        //== 8*k + 8*(len + wid) + 8*len + 2*k + 8*len + 2*(len + wid) ==
-        //== 10*k + 10*(len + wid) + 16*len
+        //== 8*k + 8*(len + wid) + 12*len + 2*k + 8*len + 2*(len + wid) ==
+        //== 10*k + 10*(len + wid) + 20*len
+        
+        //sn6 = sn5 + (2*k + 10*len + 2*(len + wid)) ==
+        //== 10*k + 10*(len + wid) + 20*len + 2*k + 10*len + 2*(len + wid) ==
+        //== 12*k + 12*(len + wid) + 30*len
+        
+        //sn7 = sn6 + (2*k + 12*len + 2*(len + wid)) ==
+        //== 12*k + 12*(len + wid) + 30*len + 2*k + 12*len + 2*(len + wid) ==
+        //== 14*k + 14*(len + wid) + 42*len
+        
+        //sn8 = sn7 + (2*k + 14*len + 2*(len + wid)) ==
+        //== 14*k + 14*(len + wid) + 42*len + 2*k + 14*len + 2*(len + wid) ==
+        //== 16*k + 16*(len + wid) + 56*len
+        
+        //sn9 = sn8 + (2*k + 16*len + 2*(len + wid)) ==
+        //== 16*k + 16*(len + wid) + 56*len + 2*k + 16*len + 2*(len + wid) ==
+        //== 18*k + 18*(len + wid) + 72*len
+        
+        //sn10 = sn9 + (2*k + 18*len + 2*(len + wid)) ==
+        //== 18*k + 18*(len + wid) + 72*len + 2*k + 18*len + 2*(len + wid) ==
+        //== 20*k + 20*(len + wid) + 90*len
+        
+        int sn10 = 20*k + 20*(len + wid) + 86*len;
+        Console.WriteLine($"sn10={sn10}");
         
         
         
