@@ -1,0 +1,42 @@
+using System;
+
+public class Garden
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Расстояние от колодца до грядок:");
+        int k = Convert.ToInt32(Console.ReadLine());
+        
+        Console.Write("Длина грядки:");
+        int len = Convert.ToInt32(Console.ReadLine());
+        
+        Console.Write("Ширина грядки:");
+        int wid = Convert.ToInt32(Console.ReadLine());
+        
+        //Console.Write("Количество грядок:");
+        //int n = Convert.ToInt32(Console.ReadLine());
+        
+        int sn1, sn2, sn3;
+        sn1 = 2*k + 2*(len + wid);
+        sn2 = sn1 + (2*k + 2*len + 2*(len + wid));
+        sn3 = sn2 + (2*k + 4*len + 2*(len + wid));
+        Console.WriteLine($"sn1={sn1}, sn2={sn2}, sn3={sn3}");
+        
+        //sn2 = 2*k + 2*(len + wid) + 2*k + 2*len + 2*(len + wid) ==
+        //== 4*k + 4*(len + wid) + 2*len
+        
+        //sn3 = 4*k + 4*(len + wid) + 2*len + 2*k + 4*len + 2*(len + wid) ==
+        //== 6*k + 6*(len + wid) + 6*len
+        
+        //sn4 = sn3 + (2*k + 6*len + 2*(len + wid)) ==
+        //== 6*k + 6*(len + wid) + 2*len + 2*k + 6*len + 2*(len + wid) ==
+        //== 8*k + 8*(len + wid) + 8*len
+        
+        //sn5 = sn4 + (2*k + 8*len + 2*(len + wid)) ==
+        //== 8*k + 8*(len + wid) + 8*len + 2*k + 8*len + 2*(len + wid) ==
+        //== 10*k + 10*(len + wid) + 16*len
+        
+        
+        
+    }
+}
